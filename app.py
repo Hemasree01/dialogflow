@@ -25,8 +25,9 @@ html_code = """
   project-id="resolute-winter-447814-t5"
   agent-id="ab8f4047-d088-435d-a2cd-0752ab81b919"
   language-code="en"
+  max-query-length="-1"
   allow-feedback="all">
-  <df-messenger-chat chat-title="demo"></df-messenger-chat>
+  <df-messenger-chat-bubble chat-title="demo"></df-messenger-chat-bubble>
 </df-messenger>
 
 <style>
