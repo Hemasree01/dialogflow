@@ -50,6 +50,17 @@ html_code = """
 
     // Render a custom text message from the agent
     dfMessenger.renderCustomText('Hello! How can I assist you today?', true);
+    document.addEventListener('DOMContentLoaded', () => {
+  const dfMessenger = document.querySelector('df-messenger');
+
+  // Set Default Query Parameters for the Playbook
+  const queryParameters = {
+    parameters: {
+      playbook: "default_generative_playbook"
+    }
+  };
+  dfMessenger.setQueryParameters(queryParameters);
+});
 
     // Render a custom card response
     const payload = [
